@@ -115,3 +115,16 @@ alias tf="terraform"
 export PATH="/opt/homebrew/opt/llvm@12/bin:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/llvm@12/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/llvm@12/include"
+export PATH="/usr/local/texlive/2023/texmf-dist/scripts/latexmk:$PATH"
+
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/opt/homebrew/share/google-cloud-sdk/path.zsh.inc' ]; then . '/opt/homebrew/share/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/opt/homebrew/share/google-cloud-sdk/completion.zsh.inc' ]; then . '/opt/homebrew/share/google-cloud-sdk/completion.zsh.inc'; fi
+alias k="kubectl"
+export PATH="$PATH:$HOME/go/bin"
+
+source /Users/jingkaiooi/.docker/init-zsh.sh || true # Added by Docker Desktop
+alias nvim-kickstart='NVIM_APPNAME=nvim-kickstart nvim'
