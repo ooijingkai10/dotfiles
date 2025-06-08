@@ -108,6 +108,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll="ls -alhF"
 alias tf="terraform"
+alias nvim-kickstart='NVIM_APPNAME=nvim-kickstart nvim'
+alias k="kubectl"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -123,8 +125,6 @@ if [ -f '/opt/homebrew/share/google-cloud-sdk/path.zsh.inc' ]; then . '/opt/home
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/opt/homebrew/share/google-cloud-sdk/completion.zsh.inc' ]; then . '/opt/homebrew/share/google-cloud-sdk/completion.zsh.inc'; fi
-alias k="kubectl"
 export PATH="$PATH:$HOME/go/bin"
 
 source /Users/jingkaiooi/.docker/init-zsh.sh || true # Added by Docker Desktop
-alias nvim-kickstart='NVIM_APPNAME=nvim-kickstart nvim'
