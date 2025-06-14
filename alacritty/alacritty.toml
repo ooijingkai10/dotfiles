@@ -1,7 +1,7 @@
 
-[[keyboard.bindings]]
-action = "ToggleFullscreen"
-key = "F12"
+# [[keyboard.bindings]]
+# action = "ToggleFullscreen"
+# key = "F12"
 
 [general]
 import = ["/Users/jingkaiooi/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
@@ -19,8 +19,8 @@ family = "Menlo"
 
 [terminal.shell]
 program = "/bin/zsh"
-# args = ["-l"]
-args = ["-l", "-c", "tmux a || tmux"]
+args = ["-l"]
+# args = ["-l", "-c", "tmux a || tmux"]
 # program = "tmux"
 # args = ["a || tmux"]
 
@@ -35,3 +35,8 @@ x = 0
 y = 0
 
 [keyboard]
+bindings = [
+  { key = "F12", action = "ToggleFullScreen" },
+  { key = "F", mods = "Control|Shift", chars = "tmux-sessionizer\u000D" }
+]
+

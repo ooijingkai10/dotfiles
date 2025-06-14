@@ -10,6 +10,8 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Install devtools
 brew install neovim tmux alacritty docker docker-compose htop wget go koekeishiya/formulae/skhd koekeishiya/formulae/yabai
+brew tap FelixKratz/formulae
+brew install borders
 
 # create .config dir
 mkdir $HOME/.config
@@ -17,6 +19,7 @@ mkdir $HOME/.config
 # set links
 DOTFILE_PATH=$HOME/.dotfiles
 ln -s $DOTFILE_PATH/.zshrc ~/.zshrc
+ln -s $DOTFILE_PATH/tmux/tmux-sessionizer ~/.local/bin/tmux-sessionizer
 ln -s $DOTFILE_PATH/nvim ~/.config/nvim
 ln -s $DOTFILE_PATH/nvim-kickstart ~/.config/nvim-kickstart
 ln -s $DOTFILE_PATH/skhd ~/.config/skhd
