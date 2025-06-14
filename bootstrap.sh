@@ -16,12 +16,14 @@ brew install borders
 # create .config dir
 mkdir $HOME/.config
 
+# install tpm
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 # set links
 DOTFILE_PATH=$HOME/.dotfiles
 ln -s $DOTFILE_PATH/.zshrc ~/.zshrc
 ln -s $DOTFILE_PATH/tmux/tmux-sessionizer ~/.local/bin/tmux-sessionizer
 ln -s $DOTFILE_PATH/nvim ~/.config/nvim
-ln -s $DOTFILE_PATH/nvim-kickstart ~/.config/nvim-kickstart
 ln -s $DOTFILE_PATH/skhd ~/.config/skhd
 ln -s $DOTFILE_PATH/yabai ~/.config/yabai
 ln -s $DOTFILE_PATH/tmux ~/.config/tmux
