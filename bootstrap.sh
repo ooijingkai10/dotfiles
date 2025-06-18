@@ -11,6 +11,7 @@ brew install neovim tmux alacritty docker docker-compose htop wget go koekeishiy
 brew tap FelixKratz/formulae
 brew install borders
 brew install --cask font-hack-nerd-font
+brew install --cask mysqlworkbench
 
 # Install omz
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
