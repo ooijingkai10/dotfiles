@@ -10,3 +10,6 @@ vim.api.nvim_set_keymap("i", "<C-j>", "<Down>", { noremap = true, silent = true 
 vim.api.nvim_set_keymap("i", "<C-k>", "<Up>", { noremap = true, silent = true })
 -- Remap Ctrl+l to right
 vim.api.nvim_set_keymap("i", "<C-l>", "<Right>", { noremap = true, silent = true })
+
+-- keymap for delete markings
+vim.api.nvim_set_keymap("n", "<C-m>", ":delmarks A-Za-z<CR>", { noremap = true, silent = true })
