@@ -12,4 +12,6 @@ vim.api.nvim_set_keymap("i", "<C-k>", "<Up>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("i", "<C-l>", "<Right>", { noremap = true, silent = true })
 
 -- keymap for delete markings
-vim.api.nvim_set_keymap("n", "<C-m>", ":delmarks A-Za-z<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<C-m>", ":delmarks A-Za-z<CR>", { noremap = true, silent = true, desc = "delete marks" })
+vim.api.nvim_set_keymap("n", "<C-d>", "<C-d>zz", { noremap = true, silent = true, desc = "delete marks" })
+vim.api.nvim_set_keymap("n", "<C-u>", "<C-u>zz", { noremap = true, silent = true, desc = "delete marks" })
