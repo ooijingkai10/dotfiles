@@ -1,2 +1,3 @@
 theme = "catppuccin-mocha"
 font-family = "JetBrainsMono Nerd Font"
+keybind = control+shift+f=text:tmux-sessionizer\n
