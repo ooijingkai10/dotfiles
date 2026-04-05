@@ -19,3 +19,10 @@ vim.opt.softtabstop = spaces -- break tabstop down further
 vim.opt.autoindent = true    -- auto indent next line when using o/O or enter
 vim.opt.shiftwidth = spaces  -- no of spaces for auto indent next line
 vim.opt.clipboard = "unnamedplus"
+
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+
+-- linewrap and break lines by words
+vim.opt.wrap = true 
+vim.opt.linebreak = true
