@@ -1,21 +1,21 @@
 return {
-  "NeogitOrg/neogit",
-  keys = {
-    {
-      "<leader>gp",
-      "<cmd>Neogit<cr>",
-      "n",
-      desc = "Neo Git",
-    },
-  },
-  dependencies = {
-    "nvim-lua/plenary.nvim", -- required
-    "sindrets/diffview.nvim", -- optional - Diff integration
-
-    -- Only one of these is needed.
-    -- "nvim-telescope/telescope.nvim", -- optional
-    -- "ibhagwan/fzf-lua",              -- optional
-    -- "echasnovski/mini.pick",         -- optional
-    -- "folke/snacks.nvim",             -- optional
-  },
+  -- "NeogitOrg/neogit",
+  -- keys = {
+  --   {
+  --     "<leader>gp",
+  --     "<cmd>Neogit<cr>",
+  --     "n",
+  --     desc = "Neo Git",
+  --   },
+  -- },
+  -- dependencies = {
+  --   "nvim-lua/plenary.nvim", -- required
+  --   "sindrets/diffview.nvim", -- optional - Diff integration
+  --
+  --   -- Only one of these is needed.
+  --   -- "nvim-telescope/telescope.nvim", -- optional
+  --   -- "ibhagwan/fzf-lua",              -- optional
+  --   -- "echasnovski/mini.pick",         -- optional
+  --   -- "folke/snacks.nvim",             -- optional
+  -- },
 }
