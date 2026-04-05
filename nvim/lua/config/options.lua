@@ -3,6 +3,6 @@
 -- Add any additional options here
 --
 -- vim.opt.clipboard = "unnamedplus"
-vim.g.snacks_animate = false
-vim.g.autoformat = false
-vim.api.nvim_set_hl(0, "Normal", { fg = "#000000", default = true })
+-- vim.g.snacks_animate = false
+-- vim.g.autoformat = false
+-- vim.api.nvim_set_hl(0, "Normal", { fg = "#000000", default = true })
