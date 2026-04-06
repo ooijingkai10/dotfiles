@@ -17,5 +17,6 @@ vim.api.nvim_set_keymap("n", "<C-d>", "<C-d>zz", { noremap = true, silent = true
 vim.api.nvim_set_keymap("n", "<C-u>", "<C-u>zz", { noremap = true, silent = true, desc = "delete marks" })
 
 -- keymap for switching window
-vim.api.nvim_set_keymap("n","<C-h>", "<C-w>h", {})
-vim.api.nvim_set_keymap("n","<C-l>", "<C-w>l", {})
+vim.api.nvim_set_keymap("n", "<C-h>", "<C-w>h", {})
+vim.api.nvim_set_keymap("n", "<C-l>", "<C-w>l", {})
+vim.keymap.set({ 'n', 'i' }, "<C-s>", "<esc>:w<cr>", {})
