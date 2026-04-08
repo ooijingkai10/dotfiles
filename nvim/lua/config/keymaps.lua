@@ -19,4 +19,12 @@ vim.api.nvim_set_keymap("n", "<C-u>", "<C-u>zz", { noremap = true, silent = true
 -- keymap for switching window
 vim.api.nvim_set_keymap("n", "<C-h>", "<C-w>h", {})
 vim.api.nvim_set_keymap("n", "<C-l>", "<C-w>l", {})
+vim.api.nvim_set_keymap("n", "<C-k>", "<C-w>k", {})
+vim.api.nvim_set_keymap("n", "<C-j>", "<C-w>j", {})
 vim.keymap.set({ 'n', 'i' }, "<C-s>", "<esc>:w<cr>", {})
+
+-- keymap for opening and closing neotree
+vim.keymap.set({ 'n' }, "<leader>e", ":Neotree toggle<cr>", { silent = true })
+
+-- keymap for vim-fugitive
+vim.keymap.set("n", "<leader>gs", vim.cmd.Git)

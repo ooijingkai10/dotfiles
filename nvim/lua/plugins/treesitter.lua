@@ -63,6 +63,7 @@ return {
           "yaml",
 
           "zig",
+          "helm"
         },
 
         -- Install parsers synchronously (only applied to `ensure_installed`)
@@ -86,4 +87,3 @@ return {
     end,
   }
 }
-

@@ -1,4 +1,5 @@
 return {
+  { "qvalentin/helm-ls.nvim", ft = "helm" },
   {
     -- Main LSP Configuration
     'neovim/nvim-lspconfig',
@@ -109,7 +110,9 @@ return {
           --
           -- This may be unwanted, since they displace some of your code
           if client and client:supports_method('textDocument/inlayHint', event.buf) then
-            map('<leader>th', function() vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled { bufnr = event.buf }) end, '[T]oggle Inlay [H]ints')
+            map('<leader>th',
+              function() vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled { bufnr = event.buf }) end,
+              '[T]oggle Inlay [H]ints')
           end
         end,
       })
@@ -120,9 +123,13 @@ return {
       ---@type table<string, vim.lsp.Config>
       local servers = {
         -- clangd = {},
-        -- gopls = {},
+        gopls = {},
+        pylsp = {},
         -- pyright = {},
-        -- rust_analyzer = {},
+        rust_analyzer = {},
+        terraformls = {},
+        helm_ls = {},
+        -- ruff = {},
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
         --    https://github.com/pmizio/typescript-tools.nvim

@@ -15,14 +15,22 @@ local spaces = 2
 vim.opt.expandtab = true     -- expand tabs new to spaces (retab if needed)
 vim.opt.tabstop = spaces     -- how many space = 1 tab
 vim.opt.softtabstop = spaces -- break tabstop down further
+vim.opt.scrolloff = 8
 
-vim.opt.autoindent = true    -- auto indent next line when using o/O or enter
-vim.opt.shiftwidth = spaces  -- no of spaces for auto indent next line
+vim.opt.autoindent = true   -- auto indent next line when using o/O or enter
+vim.opt.shiftwidth = spaces -- no of spaces for auto indent next line
 vim.opt.clipboard = "unnamedplus"
 
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 -- linewrap and break lines by words
-vim.opt.wrap = true 
+vim.opt.wrap = true
 vim.opt.linebreak = true
+
+
+-- disable swap files backups and enable undo file for undotree plugin
+vim.opt.swapfile = false
+vim.opt.backup = false
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undofile = true
